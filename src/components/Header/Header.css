@@ -1,35 +1,37 @@
 .header {
   min-height: 100%; }
-  .header .name_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .header .name_container .torka {
-      color: #0D0D0D;
-      display: flex;
-      justify-content: center;
-      font-size: 50px;
-      font-family: 'Mrs Saint Delafield', cursive; }
-      .header .name_container .torka .firstName::first-letter {
-        font-size: 1.5em; }
-      .header .name_container .torka .lastName {
-        margin-left: 10px; }
-        .header .name_container .torka .lastName::first-letter {
-          font-size: 1.5em; }
-    .header .name_container .skill {
-      color: #595859;
-      font-family: 'Cormorant Garamond', serif;
-      margin-top: -40px;
-      text-transform: uppercase; }
-  .header .galery {
-    position: relative;
-    overflow: hidden; }
-    .header .galery #imagen1 {
-      position: static;
-      width: 120%;
-      margin-left: -10%;
-      height: 100vh; }
-      @media (min-width: 768px) {
-        .header .galery #imagen1 {
-          width: 100%;
-          margin-left: 0; } }
+
+.header .name_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.header .name_container .torka {
+  color: #0D0D0D;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: 'Mrs Saint Delafield', cursive; }
+
+.header .name_container .torka .firstName::first-letter {
+  font-size: 1.5em; }
+
+.header .name_container .torka .lastName {
+  margin-left: 10px; }
+
+.header .name_container .torka .lastName::first-letter {
+  font-size: 1.5em; }
+
+.header .name_container .skill {
+  color: #595859;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: -40px;
+  text-transform: uppercase; }
+
+.header .galery {
+  position: relative;
+  overflow: hidden; }
+
+.header .galery #imagen1 {
+  width: 100%;
+  height: auto; }

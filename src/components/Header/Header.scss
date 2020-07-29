@@ -36,15 +36,9 @@
     .galery{
         position: relative;        
         overflow: hidden;
-        #imagen1{          
-            position: static;
-            width: 120%;
-            margin-left: -10%;
-            height: 100vh;
-            @include tablet(){
-                width: 100%;
-                margin-left: 0;
-            }
+        #imagen1{                      
+            width: 100%;
+            height: auto;
         }
     }
 }

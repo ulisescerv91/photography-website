@@ -22,7 +22,7 @@ const Header = () => {
             </div>
             <div className="galery">
                 {
-                   images.map( (item,index) => <img  id={`imagen${item}`} src={require(`../../Assets/images/header-${item}.jpg`)} alt="" key={index} />)                   
+                   images.map( (item,index) => <img  id={`imagen${item}`} src={require(`../../Assets/images/volcan.JPG`)} alt="" key={index} />)                   
                 }
             </div>
         </div>
