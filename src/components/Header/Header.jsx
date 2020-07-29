@@ -22,7 +22,7 @@ const Header = () => {
                     <li>
                         <a class="" href="#">
                             <div className="logo">
-                                <img src={require(`../../Assets/images/logo.png`)}  alt="Me Dicen Beto" id="logo_img"/>
+                                <img src={require(`../../Assets/images/logo_150px.png`)}  alt="Me Dicen Beto" id="logo_img"/>
                             </div>
                         </a>
                     </li>
@@ -40,7 +40,7 @@ const Header = () => {
                 <span className="little_phrase">Lorem ipsum dolor sit</span>
             </div>
             <div className="mainImg_container">
-                <img  id="mainImg" src={require(`../../Assets/images/volcan.JPG`)} alt="Volcan de Colima"  />
+                <img  id="mainImg" src={require(`../../Assets/images/volcan_1920.jpg`)} alt="Volcan de Colima"  />
             </div>
         </div>
     );
