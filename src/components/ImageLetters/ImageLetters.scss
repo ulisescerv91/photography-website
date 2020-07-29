@@ -1,0 +1,45 @@
+@import "../../Assets/css/colorPage";
+@import "../../Assets/css/resolutions";
+
+
+.imageLetters{
+    .container-text{
+        padding: 100px 0;
+        position: relative;
+        @include tablet(){
+            display: flex;
+            justify-content: flex-end;
+        }
+        .phrase{
+            font-family: Helvetica;
+            font-size: 55px;
+            .txtColor{
+                color:gainsboro;
+            }
+            @include tablet(){
+                position: absolute;
+                z-index: 2;
+                width: 60%;
+                left: 50px;
+            }
+        }
+        .tijuana{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            @include tablet(){
+                width: 50%;
+            }
+        }
+    }
+    .container_house{
+        .stars{
+            padding: 50px 0;
+            background-color: #111;
+            .casa_img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
