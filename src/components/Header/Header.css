@@ -1,37 +1,70 @@
 .header {
-  min-height: 100%; }
+  flex-direction: column; }
 
-.header .name_container {
+.header nav {
+  margin-top: 20px; }
+
+.header nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
-.header .name_container .torka {
-  color: #0D0D0D;
+.header nav ul li {
+  list-style: none; }
+
+.header nav ul li a {
+  text-transform: uppercase;
+  width: 150px;
+  text-align: center; }
+
+.header nav ul li .link_menu {
+  color: #827864;
+  font-family: 'Arimo', sans-serif;
+  text-decoration: none;
+  display: none; }
+
+@media (min-width: 1200px) {
+  .header nav ul li .link_menu {
+    display: block; } }
+
+.header nav ul li .logo #logo_img {
+  width: 150px;
+  height: auto; }
+
+.header .phrase {
+  margin-top: 30px;
+  color: #827864; }
+
+.header .phrase p {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 0 10%; }
+
+.header .phrase .little_phrase {
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 12px; }
+
+.header .mainImg_container {
   display: flex;
-  justify-content: center;
-  font-size: 50px;
-  font-family: 'Mrs Saint Delafield', cursive; }
+  align-items: center;
+  justify-content: center; }
 
-.header .name_container .torka .firstName::first-letter {
-  font-size: 1.5em; }
-
-.header .name_container .torka .lastName {
-  margin-left: 10px; }
-
-.header .name_container .torka .lastName::first-letter {
-  font-size: 1.5em; }
-
-.header .name_container .skill {
-  color: #595859;
-  font-family: 'Cormorant Garamond', serif;
-  margin-top: -40px;
-  text-transform: uppercase; }
-
-.header .galery {
-  position: relative;
-  overflow: hidden; }
-
-.header .galery #imagen1 {
+.header .mainImg_container #mainImg {
   width: 100%;
   height: auto; }
+
+@media (min-width: 768px) {
+  .header .mainImg_container #mainImg {
+    width: 90%; } }
+
+@media (min-width: 1200px) {
+  .header .mainImg_container #mainImg {
+    width: 80%; } }

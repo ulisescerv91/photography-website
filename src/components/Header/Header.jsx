@@ -7,23 +7,40 @@ import './Header.css'
 
 const Header = () => {
 
-    const [images, setImages] = useState([1]);//numero de imagenes
+    // const [images, setImages] = useState([1]);//numero de imagenes
 
     return (
-        <div className="header">
-            <div className="name_container">                
-                <div className="torka">                    
-                    <span className ="firstName">Alberto</span>
-                    <span className="lastName">Mejia</span>
-                </div>
-                <div className="skill">
-                    fotógrafo
-                </div>
+        <div className="header">   
+            <nav>
+                <ul>
+                    <li>
+                        <a class="link_menu" href="#home">Inicio</a>    
+                    </li>
+                    <li>
+                        <a class="link_menu" href="#">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">
+                            <div className="logo">
+                                <img src={require(`../../Assets/images/logo.png`)}  alt="Me Dicen Beto" id="logo_img"/>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_menu" href="#">Contactanos</a>
+                    </li>
+                    <li>
+                        <a class="link_menu" href="#">Acerca de mi</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <div className="phrase">
+                <p>Lorem ipsum dolor sit amet </p>
+                <span className="little_phrase">Lorem ipsum dolor sit</span>
             </div>
-            <div className="galery">
-                {
-                   images.map( (item,index) => <img  id={`imagen${item}`} src={require(`../../Assets/images/volcan.JPG`)} alt="" key={index} />)                   
-                }
+            <div className="mainImg_container">
+                <img  id="mainImg" src={require(`../../Assets/images/volcan.JPG`)} alt="Volcan de Colima"  />
             </div>
         </div>
     );
