@@ -3,6 +3,7 @@
 
 @media (min-width: 1200px) {
   .menu {
+    height: 1px;
     display: none; } }
 
 .menu .openMenu {
