@@ -1,0 +1,109 @@
+@import "../../Assets/css/colorPage";
+@import "../../Assets/css/resolutions";
+
+.menu{        
+    height: 1px;
+    @include desktop{
+        display: none;
+    }  
+    .openMenu{
+        position: fixed;        
+        right: 10%;
+        top: 50px;
+        width: 30px;
+        height: 20px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .lines{
+            border-radius: 5px;
+            height: 3px;
+            width: 100%;
+            background-color: color(mainText);
+        }
+    }
+    .showMenu{
+        animation: showMenu 0.7s ease-in-out forwards;
+    }
+    .hideMenu{
+        animation: hideMenu 0.45s ease-in-out  forwards;
+    }
+    .container{
+        background-color: white;
+        display: flex;
+        position: fixed;
+        width: 70%;
+        right:0;
+        transform: translateX(100%);
+        top: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        .closeMenu{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color:color(mainText);   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon_close{
+                font-size: 20px;
+            }
+        }
+        .img_container{
+            
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100px;
+                height: auto;
+                @include tablet{
+                    width: 150px;
+                }
+            }
+        }
+        .menu_options_container{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            
+            a{
+                text-decoration: none;
+                color: color(mainText);
+                font-size: 30px;
+                font-family: 'Cormorant Infant', serif;
+                margin-bottom: 20px;
+            }
+        }
+        .follow{
+            padding-bottom: 30px;
+            padding-right: 20px;
+            .socialMedia{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                .linkNetwork{
+                    .network{           
+                        .icon{
+                            color:color(mainText);
+                            font-size: 30px;
+                        }                    
+                    }
+                }
+                .instagram{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
+@keyframes showMenu{
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+@keyframes hideMenu{
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
+}

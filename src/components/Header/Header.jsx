@@ -13,25 +13,32 @@ const Header = () => {
         <div className="header">   
             <nav>
                 <ul>
-                    <li>
-                        <a class="link_menu" href="#home">Inicio</a>    
-                    </li>
-                    <li>
-                        <a class="link_menu" href="#">Galeria</a>
-                    </li>
-                    <li>
-                        <a class="" href="#">
-                            <div className="logo">
-                                <img src={require(`../../Assets/images/logo_150px.png`)}  alt="Me Dicen Beto" id="logo_img"/>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link_menu" href="#">Contactanos</a>
-                    </li>
-                    <li>
-                        <a class="link_menu" href="#">Acerca de mi</a>
-                    </li>
+                    <div className="left">
+
+                        <li>
+                            <a class="link_menu" href="#home">Inicio</a>    
+                        </li>
+                        <li>
+                            <a class="link_menu" href="#">Galeria</a>
+                        </li>
+                    </div>
+                    <div className="center">
+                        <li>
+                            <a class="" href="#">
+                                <div className="logo">
+                                    <img src={require(`../../Assets/images/logo_150px.png`)}  alt="Me Dicen Beto" id="logo_img"/>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div className="right">
+                        <li>
+                            <a class="link_menu" href="#">Contactanos</a>
+                        </li>
+                        <li>
+                            <a class="link_menu" href="#">Acerca de mi</a>
+                        </li>
+                    </div>
                 </ul>
                 
             </nav>
