@@ -4,10 +4,12 @@
 .about{
     
     margin-top: 50px;
+    // padding: 0 10%;
     position: relative;
     .info{
-        background-color: #DCDCDC;
+        background-color: color(color5);
         padding: 30px 30px 50px 30px;
+        color: #fff;
         @include desktop{
             padding: 0 50px;
             position: absolute;
@@ -34,8 +36,7 @@
                 line-height: 1.25;
             }
             .followMeBtn{
-                border:1px solid color(mainText);
-                color:color(mainText);
+                border:1px solid #fff;
                 font-size: 22px;
                 display: inline-block;
                 margin-top: 25px;

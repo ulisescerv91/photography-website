@@ -3,4 +3,10 @@
 .App {
     padding: 0;
     margin: 0;  
+    background-color: color(bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
  }

@@ -1,20 +1,15 @@
 $tablet:768px;
 $desktop:1200px;
 $colors:(
-    mainText:#827864
+    mainText:#827864,
+    bg:rgb(255, 254, 241),
+    color1:#F74639,
+    color2:#F5D538,
+    color3:#8ED18A,
+    color4:#CFE6D8,
+    color5:#CF9851
+
 );
-
-@mixin tablet{
-    @media(min-width:#{$tablet} ){
-        @content
-    }
-};
-
-@mixin desktop{
-    @media(min-width:#{$desktop} ){
-        @content
-    }
-};
 
 @function color($color-name){
     @return map-get($colors , $color-name )

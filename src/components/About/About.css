@@ -3,8 +3,9 @@
   position: relative; }
 
 .about .info {
-  background-color: #DCDCDC;
-  padding: 30px 30px 50px 30px; }
+  background-color: #CF9851;
+  padding: 30px 30px 50px 30px;
+  color: #fff; }
 
 @media (min-width: 1200px) {
   .about .info {
@@ -34,8 +35,7 @@
   line-height: 1.25; }
 
 .about .info .title .followMeBtn {
-  border: 1px solid #827864;
-  color: #827864;
+  border: 1px solid #fff;
   font-size: 22px;
   display: inline-block;
   margin-top: 25px;
