@@ -1,5 +1,7 @@
 .menu {
-  height: 1px; }
+  height: 1px;
+  position: fixed;
+  z-index: 9; }
 
 @media (min-width: 1200px) {
   .menu {

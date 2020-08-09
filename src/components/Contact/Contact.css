@@ -1,6 +1,10 @@
 .contact {
   padding: 10%; }
 
+@media (min-width: 768px) {
+  .contact {
+    padding: 0% 20%; } }
+
 .contact .mail_container {
   display: flex;
   flex-direction: column; }

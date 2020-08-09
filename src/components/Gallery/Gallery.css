@@ -1,0 +1,104 @@
+.Gallery {
+  margin-top: 50px;
+  padding: 10%;
+  color: #827864;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.Gallery .gallery_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.Gallery .gallery_title h1 {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase; }
+
+@media (min-width: 1200px) {
+  .Gallery .gallery_title h1 {
+    font-size: 65px; } }
+
+.Gallery .gallery_title .category {
+  margin: 40px 0;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  position: relative; }
+
+@media (min-width: 1200px) {
+  .Gallery .gallery_title .category {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 70px 0; } }
+
+.Gallery .gallery_title .category:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  display: block;
+  border-bottom: 1px solid #827864;
+  width: 100%; }
+
+.Gallery .grid {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 0.5em;
+  grid-template-areas: "img_nat_2 img_nat_1" "img_nat_2 img_nat_3" "img_nat_4 img_nat_5" "img_nat_7 img_nat_6" "img_nat_8 img_nat_6" "img_nat_9 img_nat_10"; }
+
+@media (min-width: 768px) {
+  .Gallery .grid {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_6 img_nat_6 img_nat_7" "img_nat_8 img_nat_6 img_nat_6 img_nat_9" "img_nat_10 img_nat_10 img_nat_10 img_nat_10"; } }
+
+@media (min-width: 1200px) {
+  .Gallery .grid {
+    grid-gap: 0.7em;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 220px) 350px;
+    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_7 img_nat_6 img_nat_6" "img_nat_8 img_nat_9 img_nat_6 img_nat_6" "img_nat_10 img_nat_10 img_nat_6 img_nat_6"; } }
+
+.Gallery .grid #image_nature_1 {
+  grid-area: img_nat_1; }
+
+.Gallery .grid #image_nature_2 {
+  grid-area: img_nat_2; }
+
+.Gallery .grid #image_nature_3 {
+  grid-area: img_nat_3; }
+
+.Gallery .grid #image_nature_4 {
+  grid-area: img_nat_4; }
+
+.Gallery .grid #image_nature_5 {
+  grid-area: img_nat_5; }
+
+.Gallery .grid #image_nature_6 {
+  grid-area: img_nat_6; }
+
+.Gallery .grid #image_nature_7 {
+  grid-area: img_nat_7; }
+
+.Gallery .grid #image_nature_8 {
+  grid-area: img_nat_8; }
+
+.Gallery .grid #image_nature_9 {
+  grid-area: img_nat_9; }
+
+.Gallery .grid #image_nature_10 {
+  grid-area: img_nat_10; }
+
+.Gallery .grid .gallery__item {
+  cursor: pointer; }
+
+.Gallery .grid .gallery__item .gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }

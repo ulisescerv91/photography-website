@@ -1,0 +1,10 @@
+.close_icon {
+  color: white;
+  font-size: 30px;
+  right: 20px;
+  top: 15px;
+  position: absolute; }
+
+.image_container .img_modal {
+  max-width: 100%;
+  max-height: 95vh; }

@@ -2,7 +2,10 @@
 @import "../../Assets/css/resolutions";
 
 .menu{        
+
     height: 1px;
+    position: fixed;
+    z-index: 9;
     @include desktop{
         height: 1px;
         display: none;

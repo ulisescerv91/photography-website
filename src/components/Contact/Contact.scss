@@ -4,6 +4,10 @@
 .contact{
     
     padding: 10%;
+    @include tablet{
+        padding: 0% 20%;
+    }
+
     .mail_container{
         display: flex;
         flex-direction: column;
