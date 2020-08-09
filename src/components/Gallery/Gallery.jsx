@@ -15,6 +15,9 @@ const Gallery = () => {
         setShowModal(false);
         
     }
+
+   
+
     return (
         <div className="Gallery">
             <div className="gallery_title">
@@ -35,7 +38,7 @@ const Gallery = () => {
 
             </div>
             {
-                showModal && <ImageModal img={imgToShowInModal} closeModalfn={closeModal}/>            
+                showModal && <ImageModal img={imgToShowInModal} closeModalfn={closeModal} lastImg={10}/>            
             }
 
         </div>

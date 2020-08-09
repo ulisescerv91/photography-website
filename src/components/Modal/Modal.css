@@ -9,6 +9,5 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.94); }
-
-.modal .modal_container {
-  padding: 5%; }
+  .modal .modal_container {
+    padding: 5%; }
