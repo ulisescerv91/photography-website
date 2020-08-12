@@ -15,14 +15,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.change_img .icon_change_img {
-  font-size: 25px;
-  cursor: pointer; }
+  .change_img .icon_change_img {
+    font-size: 25px;
+    cursor: pointer; }
 
 .image_container {
   user-select: none; }
-
-.image_container .img_modal {
-  max-width: 100%;
-  max-height: 95vh; }
+  .image_container .img_modal {
+    max-width: 100%;
+    max-height: 95vh; }

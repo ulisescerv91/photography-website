@@ -1,0 +1,69 @@
+@import "../../Assets/css/colorPage";
+@import "../../Assets/css/resolutions";
+
+.GalleryItems{
+    margin-top: 50px;
+    padding: 10%;
+    color: color(mainText);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .grid{
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        grid-gap: 0.5em;
+        grid-template-areas: 
+            "img_nat_2 img_nat_1"
+            "img_nat_2 img_nat_3"
+            "img_nat_4 img_nat_5"
+            "img_nat_7 img_nat_6"
+            "img_nat_8 img_nat_6"
+            "img_nat_9 img_nat_10";
+
+        @include tablet() {
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(3, 200px);
+            // grid-gap: 0.7em;
+            grid-template-areas: 
+                "img_nat_2 img_nat_2 img_nat_1 img_nat_1"
+                "img_nat_2 img_nat_2 img_nat_1 img_nat_1"
+                "img_nat_2 img_nat_2 img_nat_3 img_nat_4"
+                "img_nat_5 img_nat_6 img_nat_6 img_nat_7"
+                "img_nat_8 img_nat_6 img_nat_6 img_nat_9"
+                "img_nat_10 img_nat_10 img_nat_10 img_nat_10";
+        }   
+        @include desktop() {
+            grid-gap: 0.7em;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 220px) 350px;
+            grid-template-areas: 
+                "img_nat_2 img_nat_2 img_nat_1 img_nat_1"
+                "img_nat_2 img_nat_2 img_nat_1 img_nat_1"
+                "img_nat_2 img_nat_2 img_nat_3 img_nat_4"
+                "img_nat_5 img_nat_7 img_nat_6 img_nat_6"
+                "img_nat_8 img_nat_9 img_nat_6 img_nat_6"
+                "img_nat_10 img_nat_10 img_nat_6 img_nat_6";
+        }  
+        
+
+
+
+        @for $i from 1 through 10 {
+            #image_nature_#{$i}{
+                grid-area: img_nat_#{$i};
+            }            
+          }
+          .gallery__item{
+              cursor: pointer;
+            .gallery__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+          }
+    }
+}
