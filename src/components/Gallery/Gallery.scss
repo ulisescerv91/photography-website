@@ -4,6 +4,13 @@
 .Gallery{
     margin-top: 50px;
     color: color(mainText);
+    display: flex;    
+    flex-direction: column;    
+    position: relative;
+    overflow: hidden;
+    @include desktop(){
+        position: relative;
+    }
 
     .gallery_title{
         h1{
@@ -12,97 +19,170 @@
             font-size: 80px;
             text-transform: uppercase;
             @include desktop(){
-                font-size: 65px;
+                font-size: 20vw;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: 1;
+                letter-spacing: 5px;
+            }
+        }
+        .showCat{
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            @include desktop(){
+                position: fixed;
+                top: 50%;
+                right: 0;
+                z-index: 2;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 110px;
+                height: 1px;
+                border-bottom: 1px solid color(mainText);
             }
         }
         
     }
-    .gallery_options{
-        &_item{
-            margin-top: 40px;
-            // border:1px solid red;
-            overflow: hidden;
-            &_container_img{
-                width: 100%;
-                height: 250px;
-                overflow: hidden;
-                position: relative;
-                cursor: pointer;
-                .gallery_bg_img{
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center center;                          
-                    height: 100%;
-                    width: 100%;
-                    transition: filter,transform 0.7s;
-                }
-                &:hover{
+    .container{
+        // display: flex;
+        overflow: hidden;
+        .gallery_options{
+            &_item{
+                
+                &_container_img{
+                    width: 100%;                    
+                    height: 250px;                    
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    @include tablet(){
+                        height: 450px;
+                    }
+                    
                     .gallery_bg_img{
-                        filter: grayscale(100%);
-                        transform: scale(1.1);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;                          
+                        height: 100%;
+                        width: 100%;
+                        transition: filter,transform 0.7s;
                     }
+                    &:hover{
+                        .gallery_bg_img{
+                            filter: grayscale(100%);
+                            transform: scale(1.1);
+                        }
+                        .show_gallery{
+                            path{
+                                animation: svgAnimation 0.7s linear forwards;
+                            } 
+                        }
+                    }
+                    .gallery_bg_volcan{
+                        background-image: url('../../Assets/images/gallery/volcan.jpg') ;                                   
+                    }
+                    .gallery_bg_people{
+                        background-image: url('../../Assets/images/gallery/people.jpg') ;               
+                    }
+                    .gallery_bg_street{
+                        background-image: url('../../Assets/images/gallery/palacio.jpg') ;               
+                    }
+    
                     .show_gallery{
-                        path{
-                            animation: svgAnimation 0.7s linear forwards;
-                        } 
-                    }
-                }
-                .gallery_bg_volcan{
-                    background-image: url('../../Assets/images/gallery/volcan.jpg') ;                                   
-                }
-                .gallery_bg_people{
-                    background-image: url('../../Assets/images/gallery/people.jpg') ;               
-                }
-                .gallery_bg_street{
-                    background-image: url('../../Assets/images/gallery/palacio.jpg') ;               
-                }
-
-                .show_gallery{
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%,-50%);                                 
-                    svg{
-                        width: 100px;
-                        height: 100px;
                         position: absolute;
                         left: 50%;
                         top: 50%;
-                        transform: translate(-50%,-50%)
+                        transform: translate(-50%,-50%);                                 
+                        svg{
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%)
+                            
+                        }
+                        path {                        
+                            fill: transparent;
+                            stroke-width: 10;
+                            stroke: none;
+                            stroke-dasharray: 1765;
+                            stroke-dashoffset: 0;
+                        }
+                    }                                    
+                }
+                &_description{
+                    padding: 5%;
+                    .title{
+                        color:black;
                         
                     }
-                    path {                        
-                        fill: transparent;
-                        stroke-width: 10;
-                        stroke: none;
-                        stroke-dasharray: 1765;
-                        stroke-dashoffset: 0;
-                    }
-                }                                    
-            }
-            &_description{
-                padding: 5%;
-                .title{
-                    color:black;
-                    
                 }
             }
-        }
-        
-        .img_center{
-            .gallery_options_item_container_img{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                    
+            @include desktop(){
+                .opc_volcan{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 15vw;
+                    margin-top: 15vw;
+                    .gallery_options_item_container_img{
+                        width: 768px;
+                        height: 512px;
+                    }
+                    .gallery_options_item_description{
+                        width: 350px;
+                    }
+                }
+                .opc_people{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row-reverse;
+                    // padding-left: 25vw;
+                    //padding-right: 10vw;
+                    margin-top: 20vh;
+                    .gallery_options_item_container_img{
+                        width: 768px;
+                        height: 512px;
+                    }
+                    .gallery_options_item_description{                    
+                        width: 350px;
+                    }
+                }
+                .opc_street{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 15vw;
+                    margin-top: 15vh;
+                    .gallery_options_item_container_img{
+                        width: 768px;
+                        height: 512px;
+                    }
+                    .gallery_options_item_description{
+                        width: 350px;
+                    }
+                }
             }
-            .gallery_options_item_description{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 5% 15%;
+    
+        }
+        .gallery_items{
+            
+            @include desktop(){
+                margin-top: 40vh;
             }
         }
-
     }
 }
 

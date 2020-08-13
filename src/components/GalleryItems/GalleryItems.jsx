@@ -18,10 +18,10 @@ const GalleryItems = () => {
     }
 
     return (
-        <div className="galleryItems_container">
+        <div className="GalleryItems">
             <div className="grid">
                 {
-                    nature_img.map((item,i)=> (<figure class="gallery__item gallery__item--5" id={`image_nature_${item}`} key={item}>
+                    nature_img.map((item,i)=> (<figure className="gallery__item gallery__item--5" id={`image_nature_${item}`} key={item}>
                                 <img src={require(`../../Assets/images/gallery/nature/${item}.jpg`)} onClick={() => openModal(item) } alt="Beto"  className="gallery__img" />
                             </figure>) )
                         

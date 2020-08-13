@@ -43,7 +43,7 @@ const Header = () => {
                 
             </nav>
             <div className="phrase">
-                <p>Lorem ipsum dolor sit amet </p>
+                <p className="">Lorem ipsum dolor sit amet </p>
                 <span className="little_phrase">Lorem ipsum dolor sit</span>
             </div>
             <div className="mainImg_container">

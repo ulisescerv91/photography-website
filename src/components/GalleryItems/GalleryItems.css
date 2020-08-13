@@ -1,6 +1,5 @@
 .GalleryItems {
-  margin-top: 50px;
-  padding: 10%;
+  padding: 0 10%;
   color: #827864;
   display: flex;
   flex-direction: column;
