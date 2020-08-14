@@ -11,21 +11,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 100px);
-  grid-gap: 0.5em;
-  grid-template-areas: "img_nat_2 img_nat_1" "img_nat_2 img_nat_3" "img_nat_4 img_nat_5" "img_nat_7 img_nat_6" "img_nat_8 img_nat_6" "img_nat_9 img_nat_10"; }
-
-@media (min-width: 768px) {
-  .GalleryItems .grid {
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_6 img_nat_6 img_nat_7" "img_nat_8 img_nat_6 img_nat_6 img_nat_9" "img_nat_10 img_nat_10 img_nat_10 img_nat_10"; } }
-
-@media (min-width: 1200px) {
-  .GalleryItems .grid {
-    grid-gap: 0.7em;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(5, 220px) 350px;
-    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_7 img_nat_6 img_nat_6" "img_nat_8 img_nat_9 img_nat_6 img_nat_6" "img_nat_10 img_nat_10 img_nat_6 img_nat_6"; } }
+  grid-gap: 0.5em; }
 
 .GalleryItems .grid #image_nature_1 {
   grid-area: img_nat_1; }
@@ -64,3 +50,51 @@
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.GalleryItems .nature {
+  grid-template-areas: "img_nat_1 img_nat_2" "img_nat_1 img_nat_3" "img_nat_4 img_nat_5" "img_nat_6 img_nat_10" "img_nat_7 img_nat_10" "img_nat_8 img_nat_9"; }
+
+@media (min-width: 768px) {
+  .GalleryItems .nature {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas: "img_nat_10 img_nat_10 img_nat_1 img_nat_1" "img_nat_10 img_nat_10 img_nat_1 img_nat_1" "img_nat_10 img_nat_10 img_nat_5 img_nat_3" "img_nat_4 img_nat_9 img_nat_9 img_nat_2" "img_nat_8 img_nat_9 img_nat_9 img_nat_6" "img_nat_7 img_nat_7 img_nat_7 img_nat_7"; } }
+
+@media (min-width: 1200px) {
+  .GalleryItems .nature {
+    grid-gap: 0.7em;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 320px) 250px;
+    grid-template-areas: "img_nat_1 img_nat_1 img_nat_1 img_nat_4" "img_nat_1 img_nat_1 img_nat_1 img_nat_6" "img_nat_7 img_nat_7 img_nat_7 img_nat_7" "img_nat_5 img_nat_5 img_nat_10 img_nat_10" "img_nat_9 img_nat_3 img_nat_10 img_nat_10" "img_nat_8 img_nat_2 img_nat_10 img_nat_10"; } }
+
+.GalleryItems .people {
+  grid-template-areas: "img_nat_2 img_nat_1" "img_nat_2 img_nat_3" "img_nat_4 img_nat_5" "img_nat_7 img_nat_6" "img_nat_8 img_nat_6" "img_nat_9 img_nat_10"; }
+
+@media (min-width: 768px) {
+  .GalleryItems .people {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_6 img_nat_6 img_nat_7" "img_nat_8 img_nat_6 img_nat_6 img_nat_9" "img_nat_10 img_nat_10 img_nat_10 img_nat_10"; } }
+
+@media (min-width: 1200px) {
+  .GalleryItems .people {
+    grid-gap: 0.7em;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 220px) 350px;
+    grid-template-areas: "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_1 img_nat_1" "img_nat_2 img_nat_2 img_nat_3 img_nat_4" "img_nat_5 img_nat_7 img_nat_6 img_nat_6" "img_nat_8 img_nat_9 img_nat_6 img_nat_6" "img_nat_10 img_nat_10 img_nat_6 img_nat_6"; } }
+
+.GalleryItems .street {
+  grid-template-areas: "img_nat_1 img_nat_2" "img_nat_1 img_nat_3" "img_nat_4 img_nat_5" "img_nat_7 img_nat_10" "img_nat_8 img_nat_10" "img_nat_9 img_nat_6"; }
+
+@media (min-width: 768px) {
+  .GalleryItems .street {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 180px) 100px 100px;
+    grid-template-areas: "img_nat_1 img_nat_1 img_nat_2 img_nat_3" "img_nat_1 img_nat_1 img_nat_6 img_nat_6" "img_nat_1 img_nat_1 img_nat_4 img_nat_5" "img_nat_8 img_nat_7 img_nat_7 img_nat_9" "img_nat_8 img_nat_7 img_nat_7 img_nat_9"; } }
+
+@media (min-width: 1200px) {
+  .GalleryItems .street {
+    grid-gap: 0.7em;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 180px) 350px;
+    grid-template-areas: "img_nat_1 img_nat_1 img_nat_7 img_nat_7" "img_nat_1 img_nat_1 img_nat_7 img_nat_7" "img_nat_1 img_nat_1 img_nat_3 img_nat_4" "img_nat_5 img_nat_2 img_nat_10 img_nat_10" "img_nat_8 img_nat_9 img_nat_10 img_nat_10" "img_nat_6 img_nat_6 img_nat_10 img_nat_10"; } }

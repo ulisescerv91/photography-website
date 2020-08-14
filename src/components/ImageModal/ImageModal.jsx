@@ -28,7 +28,7 @@ const ImageModal = (props) => {
                 <FcNext className="icon_change_img" onClick={nextImgShowInModal}/>
             </div>
             <div className="image_container">
-                <img src={require(`../../Assets/images/gallery/nature/${imageToShow}.jpg`)}  alt="Beto"  className="img_modal" />
+                <img src={require(`../../Assets/images/gallery/${props.selection}/${imageToShow}.jpg`)}  alt="Beto"  className="img_modal" />
             </div>
         </Modal>
     );
