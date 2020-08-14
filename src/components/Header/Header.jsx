@@ -10,16 +10,16 @@ const Header = () => {
     // const [images, setImages] = useState([1]);//numero de imagenes
 
     return (
-        <div className="header">   
+        <div className="header" id="header">   
             <nav>
                 <ul>
                     <div className="left">
 
                         <li>
-                            <a className="link_menu" href="#home">Inicio</a>    
+                            <a className="link_menu" href="#header">Inicio</a>    
                         </li>
                         <li>
-                            <a className="link_menu" href="#">Galeria</a>
+                            <a className="link_menu" href="#gallery_title">Galeria</a>
                         </li>
                     </div>
                     <div className="center">
@@ -36,7 +36,7 @@ const Header = () => {
                             <a className="link_menu" href="#">Contactanos</a>
                         </li>
                         <li>
-                            <a className="link_menu" href="#">Acerca de mi</a>
+                            <a className="link_menu" href="#about">Acerca de mi</a>
                         </li>
                     </div>
                 </ul>

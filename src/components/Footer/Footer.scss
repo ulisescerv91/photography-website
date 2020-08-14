@@ -1,0 +1,35 @@
+@import "../../Assets/css/colorPage";
+@import "../../Assets/css/resolutions";
+
+.footer {
+    background-color: color(color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    flex-direction: column;
+    margin-top: 30vh;
+    .follow {
+        padding-bottom: 30px;
+        padding-right: 20px;
+        border-top: 2px solid #333;
+        padding: 10px 60px;
+        margin-top: 15px;
+        .socialMedia {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .linkNetwork {
+                .network {
+                    .icon {
+                        color: #333;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .instagram {
+                margin-right: 20px;
+            }
+        }
+    }
+}

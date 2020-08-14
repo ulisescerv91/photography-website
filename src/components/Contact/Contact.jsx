@@ -44,7 +44,7 @@ export default function Contact() {
                     <span>With us</span>
                     <span>Send a message</span>
                 </div>
-                <div className="contact_form">
+                {/* <div className="contact_form">
                     <form >
                         <input type="text" className="inputDataCustomer" defaultValue={customer.name}  onChange={handleChange} name="name" id="name" placeholder="NOMBRE" maxLength="30" required/>
                         <input type="email"  className="inputDataCustomer"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required name="mail" id="mail" placeholder="CORREO ELECTRONICO" onChange={handleChange} maxLength="40"/>                    
@@ -52,7 +52,7 @@ export default function Contact() {
 
                         <input  className="submitBtn" type="submit" onClick={handleSubmit} value="ENVIAR"/>
                     </form>
-                </div>
+                </div> */}
             </div>
             <div className="whatssapp"> 
                 
@@ -60,8 +60,9 @@ export default function Contact() {
                     <div className="icon_whats">
                         <FaWhatsapp/>
                     </div>
+                    
                     <div className="msg_whats">
-                        <span>Click aqui para contactarme directamente</span>
+                        <span>Contactarme directamente</span>
                         <span>WhatsAPP</span>
                     </div>
                 </a>

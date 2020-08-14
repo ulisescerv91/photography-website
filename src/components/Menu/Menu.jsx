@@ -34,10 +34,10 @@ export default function Menu() {
                     <img src={require(`../../Assets/images/logo_150px.png`)}  alt="Me Dicen Beto"/>
                 </div>
                 <div className="menu_options_container">
-                    <a href="#">Inicio</a>
-                    <a href="#">Galeria</a>
+                    <a href="#header">Inicio</a>
+                    <a href="#gallery_title">Galeria</a>
                     <a href="#">Contactame</a>
-                    <a href="#">Acerca de mi</a>
+                    <a href="#about">Acerca de mi</a>
                 </div>
                 <div className="follow">
                     <div className="socialMedia">
